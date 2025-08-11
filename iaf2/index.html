@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>West Bengal — Hindu Heritage Map</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-sA+4kQbM6kQp2e5x0bKcGZbq6m9qv9WcM2R9v+0XK3o=" crossorigin=""/>
+  <style>
+    html,body,#map { height:100%; margin:0; padding:0; }
+    #map { position:absolute; top:0; left:0; right:0; bottom:0; }
+    .lang-toggle {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 1000;
+      background:#fff;
+      border-radius:6px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.15);
+      padding:6px 10px;
+      font-family: sans-serif;
+      cursor:pointer;
+    }
+    .popup-card { width:320px; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans Bengali", "Noto Sans", Arial; }
+    .popup-title { font-weight:700; margin:0 0 6px 0; font-size:16px; }
+    .popup-desc { font-size:13px; margin:6px 0; color:#222; line-height:1.3; max-height:140px; overflow:auto; }
+    .carousel { display:flex; align-items:center; gap:6px; margin-top:6px; }
+    .carousel img { width:100px; height:70px; object-fit:cover; border-radius:4px; cursor:pointer; box-shadow:0 1px 4px rgba(0,0,0,0.2); }
+    .carousel-controls { display:flex; align-items:center; gap:8px; margin-left:auto; }
+    .btn { background:#f4f4f4; border:0; padding:6px 8px; border-radius:4px; cursor:pointer; }
+    /* Lightbox */
+    .lightbox {
+      position:fixed; inset:0; display:none; align-items:center; justify-content:center;
+      background:rgba(0,0,0,0.85); z-index:2000;
+    }
+    .lightbox img { max-width:92%; max-height:86%; box-shadow:0 8px 24px rgba(0,0,0,0.6); border-radius:6px; }
+    .lightbox-close { position:absolute; top:20px; right:20px; color:#fff; font-size:20px; cursor:pointer; }
+    /* small screens */
+    @media (max-width:420px){
+      .popup-card{ width:260px; }
+      .carousel img{ width:78px; height:60px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <button id="langToggle" class="lang-toggle" aria-pressed="false">বাংলা</button>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true">
+    <span id="lbClose" class="lightbox-close">✕</span>
+    <img id="lbImg" alt="Full size">
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-o9N1j8f7k7QbJlfL2G6r2Y5q5Yq9gF0z0f6n0rY9m3w=" crossorigin=""></script>
+
+  <script>
+  (function(){
+    const MAP_CENTER = [23.5, 88.3];
+    const INITIAL_Z = 7;
+
+    // language state: 'en' or 'bn'
+    let lang = 'en';
+
+    const map = L.map('map').setView(MAP_CENTER, INITIAL_Z);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // language toggle button
+    const langBtn = document.getElementById('langToggle');
+    langBtn.addEventListener('click', () => {
+      lang = (lang === 'en') ? 'bn' : 'en';
+      langBtn.textContent = (lang === 'en') ? 'বাংলা' : 'English';
+      langBtn.setAttribute('aria-pressed', lang === 'bn');
+      // close all popups (so next open shows correct language)
+      map.closePopup();
+    });
+
+    // Lightbox elements
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lbImg');
+    const lbClose = document.getElementById('lbClose');
+    function openLightbox(src){
+      lbImg.src = src;
+      lightbox.style.display = 'flex';
+      lightbox.setAttribute('aria-hidden', 'false');
+    }
+    function closeLightbox(){
+      lightbox.style.display = 'none';
+      lightbox.setAttribute('aria-hidden', 'true');
+      lbImg.src = '';
+    }
+    lbClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    // helper: create popup DOM for a feature
+    function createPopupContent(props){
+      // props: name, description_en, description_bn, image_urls (array)
+      const title = props.name || '';
+      const desc = (lang === 'bn' && props.description_bn) ? props.description_bn : (props.description_en || '');
+      const images = Array.isArray(props.image_urls) ? props.image_urls : [];
+
+      // create container
+      const container = document.createElement('div');
+      container.className = 'popup-card';
+
+      const h = document.createElement('div');
+      h.className = 'popup-title';
+      h.textContent = title;
+      container.appendChild(h);
+
+      const p = document.createElement('div');
+      p.className = 'popup-desc';
+      p.innerText = desc;
+      container.appendChild(p);
+
+      if (images.length > 0){
+        const carousel = document.createElement('div');
+        carousel.className = 'carousel';
+
+        // thumbnails
+        images.forEach((imgUrl, idx) => {
+          const img = document.createElement('img');
+          img.src = imgUrl;
+          img.loading = 'lazy';
+          img.alt = title + ' image ' + (idx+1);
+          img.addEventListener('click', () => openLightbox(imgUrl));
+          carousel.appendChild(img);
+        });
+
+        container.appendChild(carousel);
+      }
+
+      return container;
+    }
+
+    // Load GeoJSON file (must be in same folder)
+    fetch('west_bengal_hindu_heritage.geojson')
+      .then(r => {
+        if(!r.ok) throw new Error('GeoJSON fetch failed: ' + r.status);
+        return r.json();
+      })
+      .then(geojson => {
+        // create layer; use a closure so popups respect current language when opened
+        L.geoJSON(geojson, {
+          pointToLayer: function(feature, latlng){
+            return L.marker(latlng);
+          },
+          onEachFeature: function(feature, layer){
+            layer.on('click', function(){
+              // construct popup freshly each time so language toggle works live
+              const contentNode = createPopupContent(feature.properties || {});
+              layer.bindPopup(contentNode, {maxWidth:360}).openPopup();
+            });
+          }
+        }).addTo(map);
+      })
+      .catch(err => {
+        console.error(err);
+        alert('Failed to load GeoJSON. If you opened the HTML file directly (file://), some browsers block local file fetch. Run a local server (python -m http.server) or host on GitHub Pages.');
+      });
+
+    // Accessibility: close lightbox on ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (lightbox.style.display === 'flex') closeLightbox();
+      }
+    });
+  })();
+  </script>
+</body>
+</html>

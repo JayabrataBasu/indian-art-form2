@@ -1,0 +1,317 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kalighat (Kolkata)",
+        "description_en": "Kalighat painting emerged in 19th-century Kolkata around the Kali temple; bold brushwork and single-sheet watercolours depicted deities, social scenes and satire. It bridged rural patachitra practice and urban audiences, influencing later modern Indian art. Useful for exploring devotional iconography, colonial-era social themes, and the rise of market-driven visual culture in Bengal.",
+        "description_bn": "কলকাতার কালীমন্দিরের কাছে ১৯শ শতকের গোড়ায় উদ্ভূত কালীঘাট চিত্রকলা; সাহসী ব্রাশওয়ার্ক ও এক-শিট জলরংয়ে দেবদেবী, সামাজিক দৃশ্য ও হাস্যরস প্রদর্শিত হতো। এটা গ্রামীণ পটচিত্র প্রথা ও শহুরে দর্শকের মধ্যে সংযোগ স্থাপন করে বাংলা চিত্রকলার আধুনিকতায় প্রভাব ফেলে।",
+        "tags": [
+          "painting",
+          "devotional",
+          "folk",
+          "modern-influence"
+        ],
+        "image_urls": [
+          "https://commons.wikimedia.org/wiki/Category:Kalighat_paintings",
+          "https://upload.wikimedia.org/wikipedia/commons/6/6e/Kalighat_painting_Rabindranath.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/3/3e/Kalighat_art_sample.jpg"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.352,
+          22.5146
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kumartuli (Kolkata)",
+        "description_en": "Kumartuli is Kolkata’s traditional potters’ quarter famed for hand-sculpted clay idols used in Durga Puja and other festivals. Multi-generational artisan families model, kiln-dry, paint and dress large-scale murtis; the craft intertwines ritual practice, sculptural skill and community identity, offering a live workshop view into Bengal’s Hindu festival art.",
+        "description_bn": "কুমারটুলি হলো কলকাতার ঐতিহ্যবাহী কুমার-এলাকা, যেখানে বহুপ্রজন্ম ধরে মাটি-ভিত্তিক দেবমূর্তি নকশা করা হয়, বিশেষত দুর্গাপূজার জন্য। পরিবারের কর্মশালা—নকশা, শুকানো, রং ও অলঙ্করণ—ধর্মীয় রেওয়াজ ও শিল্পকুশলতার সঙ্গে জড়িত এবং বাংলার পূজার শিল্পকলার জীবন্ত চিত্র উপস্থাপন করে।",
+        "tags": [
+          "sculpture",
+          "festival",
+          "craft",
+          "workshop"
+        ],
+        "image_urls": [
+          "https://commons.wikimedia.org/wiki/Category:Kumartuli",
+          "https://upload.wikimedia.org/wikipedia/commons/8/8b/Kumortuli_idol_workshop.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/2/2a/Kumartuli_artist.jpg"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3519,
+          22.59
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Santiniketan / Kala Bhavana (Birbhum)",
+        "description_en": "Santiniketan’s Kala Bhavana, founded by Rabindranath Tagore, is a formative centre for modern Indian art. Artists like Nandalal Bose and Benode Behari Mukherjee developed an aesthetic blending folk craft, nature and classical themes. The campus remains influential for pedagogy that values craft, mural work, and contextual art-making tied to Hindu cultural motifs.",
+        "description_bn": "রবীন্দ্রনাথ ঠাকুর প্রতিষ্ঠিত সান্তিনিকেতনের কলা ভবন আধুনিক ভারতীয় চিত্রকলার কেন্দ্র। নন্দলাল বসু, বেনোদ_behari মুখোপাধ্যায়ের মতো শিল্পীরা জনশিল্প, প্রাকৃতিক ও শাস্ত্রীয় থিম মিশিয়ে একটি স্বতন্ত্র নান্দনিকতা তৈরি করে। ক্যাম্পাসটি এখনও হিন্দু সাংস্কৃতিক ছবিহীনতায় কারিগরি ও প্রাসঙ্গিক শিল্পচর্চার জন্য উল্লেখযোগ্য।",
+        "tags": [
+          "painting",
+          "education",
+          "modern-art",
+          "mural"
+        ],
+        "image_urls": [
+          "https://commons.wikimedia.org/wiki/Category:Kala_Bhavana",
+          "https://upload.wikimedia.org/wikipedia/commons/1/17/Nandalal_Bose_painting.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/4/4b/Santiniketan_Kala_Bhavana.jpg"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.6849,
+          23.683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bishnupur (Bankura)",
+        "description_en": "Bishnupur is renowned for its 17th–18th century terracotta temples built under the Malla kings. Elaborate terracotta panels depict scenes from the Ramayana, Mahabharata and daily life; the Mallabhum tradition represents a regional Hindu temple-building vocabulary rich in narrative relief and local iconography.",
+        "description_bn": "বিষ্ণুপুরে মল্ল রাজাদের আমলে নির্মিত ১৭শ–১৮শ শতকের টেরাকোটা মন্দিরগুলি খ্যাত। সুচিত্র টেরাকোটা প্যানেলগুলো রামায়ণ, মহাভারত ও দৈনন্দিন জীবনের দৃশ্য দেখায়; মল্লাভূম শিল্পচর্চা আঞ্চলিক হিন্দু মন্দির নির্মাণশৈলীর সমৃদ্ধ উদাহরণ।",
+        "tags": [
+          "architecture",
+          "terracotta",
+          "temple",
+          "sculpture"
+        ],
+        "image_urls": [
+          "https://commons.wikimedia.org/wiki/Category:Bishnupur_temples",
+          "https://upload.wikimedia.org/wikipedia/commons/5/50/Bishnupur_Rasmancha.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/9/95/Bishnupur_terracotta_panel.jpg"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.2994,
+          23.0045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ghurni / Krishnanagar (Nadia)",
+        "description_en": "Ghurni in Krishnanagar is famed for lifelike clay dolls and miniature sculptural traditions patronized since the 18th century. Artisans create detailed figurines used in domestic shrines and displays, blending naturalistic form with devotional narratives drawn from Hindu mythology and regional life.",
+        "description_bn": "নদিয়ার কৃষ্ণনগরের ঘূর্ণি জীবন্তমানের মাটির পুতুল ও ক্ষুদ্র মূর্তি করার জন্য সুপরিচিত; ১৮শ শতক থেকে পৃষ্ঠপোষকতা পাওয়া এই রীতিতে ধারাবাহিক পরিবারগত কারিগরি ও উপাসনামূলক চিত্রণ দেখা যায়।",
+        "tags": [
+          "sculpture",
+          "folk-art",
+          "devotional",
+          "figurines"
+        ],
+        "image_urls": [
+          "https://commons.wikimedia.org/wiki/Category:Ghurni_dolls",
+          "https://upload.wikimedia.org/wikipedia/commons/0/0d/Ghurni_doll_detail.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/7/79/Krishnanagar_claydolls.jpg"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.4359,
+          23.4056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Murshidabad (Baluchari weaving)",
+        "description_en": "Murshidabad, a historic Nawabi centre, is associated with fine silk weaving and Baluchari-style sarees that weave mythic and epic scenes into their borders. These textiles fuse Hindu narrative imagery with courtly weaving techniques, reflecting devotional storytelling through wearable art.",
+        "description_bn": "মুর্শিদাবাদ একটি ঐতিহাসিক নবাবি কেন্দ্র, যেখানে সূক্ষ্ম রেশম ও বলুচরী শাড়ির বুনন প্রচলিত; এই বস্ত্রগুলো পরিপাটি প্রান্তে পৌরাণিক ও মহাকাব্যিক দৃশ্য বুনি হয়ে হিন্দু আখ্যান তুলে ধরে।",
+        "tags": [
+          "textiles",
+          "weaving",
+          "courtly-art",
+          "narrative"
+        ],
+        "image_urls": [
+          "https://commons.wikimedia.org/wiki/Category:Murshidabad_silk",
+          "https://upload.wikimedia.org/wikipedia/commons/2/2f/Baluchari_saree_detail.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/4/45/Murshidabad_weavers.jpg"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.27,
+          24.175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nabadwip / Mayapur (Nadia)",
+        "description_en": "Nabadwip and Mayapur are centers of Gaudiya Vaishnavism and the birthplace of Chaitanya Mahaprabhu. Devotional arts—kirtan, manuscript painting and temple iconography—flourished here, shaping Bengal’s Krishna-centric visual and performance traditions that remain important in Hindu devotional culture.",
+        "description_bn": "নদিয়ার নবদ্বীপ ও ময়াপুর গৌড়ীয়া বৈষ্ণবধর্মের কেন্দ্র ও চৈতন্য মহাপ্রভুর জন্মস্থান; কীর্তন, পাণ্ডুলিপি চিত্রকর্ম ও মন্দির প্রতিমা শিল্প এখানে প্রস্ফুটিত হয় এবং বাংলার কৃষ্ণকেন্দ্রিক ভক্তি-চর্চাকে গঠন করে।",
+        "tags": [
+          "music",
+          "devotional",
+          "manuscript",
+          "pilgrimage"
+        ],
+        "image_urls": [
+          "https://commons.wikimedia.org/wiki/Category:Nabadwip",
+          "https://upload.wikimedia.org/wikipedia/commons/6/6b/Nabadwip_kirtan.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/3/3c/Mayapur_temple.jpg"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3865,
+          23.4043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Purulia (Chhau masks)",
+        "description_en": "Purulia Chhau is a masked martial-dance tradition where vibrant papier-mâché masks depict Hindu mythic characters. The art combines mask-making, dance choreography and storytelling, visualizing epic episodes through movement and painted faces—an important living link between ritual and performative Hindu art.",
+        "description_bn": "পুরুলিয়া চাউ হলো মুখোশধারী মার্শাল নৃত্যপ্রথা, যেখানে উজ্জ্বল পেপিয়ার-মেশে মুখোশগুলো হিন্দু পৌরাণিক চরিত্র উপস্থাপন করে। মুখোশনির্মান, নৃত্য ও কাহিনি একত্রে এই শিল্পটিকে জীবন্ত ও আচার-নাট্যগতভাবে করেছে।",
+        "tags": [
+          "dance",
+          "masks",
+          "performance",
+          "ritual"
+        ],
+        "image_urls": [
+          "https://commons.wikimedia.org/wiki/Category:Purulia_Chhau",
+          "https://upload.wikimedia.org/wikipedia/commons/1/12/Purulia_Chhau_mask.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/8/8d/Chhau_performance.jpg"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.365,
+          23.33
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Midnapore (Patachitra & scroll traditions)",
+        "description_en": "Midnapore’s coastal and rural patachitra (scroll painting) traditions preserve narrative visual storytelling—Jagannath, Krishna-lila and local tales—performed with singing and scroll-unfurling. Patuas kept devotional narratives alive, blending painting, oral performance and ritual display in village Hindu contexts.",
+        "description_bn": "মিডনাপুরের তালুচিত্র ও পটচিত্র প্রথা গল্পবানী চিত্রাঙ্কন সংরক্ষণ করে—জগন্নাথ, কৃষ্ণ লীলা ও স্থানীয় ক্ষুদ্রকথা—যা গান ও পট উন্মোচনের সঙ্গে পরিবেশিত হয়। পটুয়া শিল্পীরা ধর্মীয় কাহিনী চিরন্থন করেন, চিত্র, মৌখিক অভিনয় ও পূজার প্রদর্শন একত্রে রেখে।",
+        "tags": [
+          "painting",
+          "scroll",
+          "performance",
+          "devotional"
+        ],
+        "image_urls": [
+          "https://commons.wikimedia.org/wiki/Category:Patachitra",
+          "https://upload.wikimedia.org/wikipedia/commons/9/93/Patachitra_scroll.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/5/5b/Patua_performance.jpg"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.2336,
+          22.43
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kolkata museums & institutions",
+        "description_en": "Kolkata’s Indian Museum, Government College of Art & Craft and Academy of Fine Arts house sculpture, terracotta, colonial prints and Bengal School works. These institutions preserve Hindu iconography, folk objects and modernist pieces—essential stops for research, provenance and curated contextual displays.",
+        "description_bn": "কলকাতার ইন্ডিয়ান মিউজিয়াম, গভর্নমেন্ট কলেজ অব আর্ট অ্যান্ড ক্রাফট ও অ্যাকাডেমি অফ ফাইন আর্টস্‌ ভাস্কর্য, টেরাকোটা, ঔপনিবেশিক প্রিন্ট ও বেঙ্গল স্কুলের কাজ রাখে। এই প্রতিষ্ঠানগুলো হিন্দু প্রতীকি শিল্প ও লোকসম্ভার সংরক্ষণ করে, গবেষণা ও প্রদর্শনের জন্য অপরিহার্য।",
+        "tags": [
+          "museum",
+          "collection",
+          "modern-art",
+          "sculpture"
+        ],
+        "image_urls": [
+          "https://commons.wikimedia.org/wiki/Category:Indian_Museum",
+          "https://upload.wikimedia.org/wikipedia/commons/7/7a/Indian_Museum_Kolkata.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/2/20/Government_College_of_Art_and_Craft.jpg"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3636,
+          22.5726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Regional temples & pilgrimage clusters (Hooghly, Howrah, Sundarbans fringe)",
+        "description_en": "This cluster maps vernacular temples and pilgrimage sites around Hooghly, Howrah and Sundarbans fringe where regional Bengali temple architecture, ritual sculpture and deity images reflect local Hindu practices. These sites show village-scale variants, temple typologies (chala, ratna) and living ritual arts.",
+        "description_bn": "হুগলি, হাওড়া ও সুন্দরবনের সন্নিকট অঞ্চলের স্থানীয় মন্দির ও তীর্থকেন্দ্রগুলো আঞ্চলিক বাংলা মন্দির স্থাপত্য, পূজার ভাস্কর্য ও দেবচিত্র প্রদর্শন করে। গ্রাম্য মন্দিরশৈলী ও রীতিনীতির জীবন্ত উদাহরণ এখানে দেখা যায়।",
+        "tags": [
+          "temple",
+          "pilgrimage",
+          "architecture",
+          "ritual"
+        ],
+        "image_urls": [
+          "https://commons.wikimedia.org/wiki/Category:Temples_in_West_Bengal",
+          "https://upload.wikimedia.org/wikipedia/commons/3/3f/Hooghly_temple.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/6/68/Howrah_temple.jpg"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2659,
+          22.9778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Contemporary Durga Puja art (Kolkata)",
+        "description_en": "Durga Puja in Kolkata transforms ritual into large-scale public art: pandal design, thematic iconography, and collaborative art direction blur lines between tradition and contemporary practice. Mapping puja sites highlights ephemeral sculpture, community aesthetics and evolving Hindu visual narratives in urban Bengal.",
+        "description_bn": "কলকাতার দুর্গা পূজা আচারকে বৃহৎ পরিসরের জনসাধারণের শিল্পে রূপান্তর করে: পাণ্ডালের নকশা, থিমভিত্তিক প্রতিমা ও সমন্বিত আর্ট ডিরেশন ঐতিহ্য ও সমকালীন অনুশীলনকে মিলায়। পুজাস্থলগুলো মানচিত্র করলে ক্ষণস্থায়ী ভাস্কর্য ও শহুরে হিন্দু দৃশ্যকথার পরিবর্তন দেখা যায়।",
+        "tags": [
+          "festival",
+          "public-art",
+          "temporary",
+          "sculpture"
+        ],
+        "image_urls": [
+          "https://commons.wikimedia.org/wiki/Category:Durga_Puja",
+          "https://upload.wikimedia.org/wikipedia/commons/0/0b/Durga_pandal_Kolkata.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/5/5d/Durga_puja_immersions.jpg"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3636,
+          22.5726
+        ]
+      }
+    }
+  ]
+}
