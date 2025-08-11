@@ -141,7 +141,7 @@
     }
 
     // Load GeoJSON file (must be in same folder)
-    fetch('west_bengal_hindu_heritage.geojson')
+    fetch('iaf2/west_bengal_hindu_heritage.geojson')
       .then(r => {
         if(!r.ok) throw new Error('GeoJSON fetch failed: ' + r.status);
         return r.json();
